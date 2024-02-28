@@ -1,0 +1,41 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+    <Title>MXtend</Title>
+    <Authors>cntseesharp</Authors>
+    <Description>MAUI Extension package, influenced by MVVMCross. 
+Quickstart your MAUI app without bothering with cumbersome routing or dependency injection.</Description>
+    <Copyright>Copyright ©2024, Maksym Kostohlodov, All rights reserved.</Copyright>
+    <PackageProjectUrl>https://github.com/cntseesharp/MXtend</PackageProjectUrl>
+    <PackageIcon>logo.png</PackageIcon>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
+    <RepositoryUrl>https://github.com/cntseesharp/MXtend</RepositoryUrl>
+    <RepositoryType>git</RepositoryType>
+    <PackageTags>dotnet-maui, dotnet, maui, cross-platform, ios, android, macos, maccatalyst, windows, winui, tizen, mvvm</PackageTags>
+    <PackageReleaseNotes>Initial release</PackageReleaseNotes>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <PackageRequireLicenseAcceptance>True</PackageRequireLicenseAcceptance>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Include="..\..\README.md">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+    <None Include="..\logo.png">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="CommunityToolkit.Mvvm" Version="8.2.2" />
+    <PackageReference Include="Microsoft.Maui.Controls.Compatibility" Version="8.0.6" />
+    <PackageReference Include="Microsoft.Maui.Core" Version="8.0.6" />
+  </ItemGroup>
+
+</Project>

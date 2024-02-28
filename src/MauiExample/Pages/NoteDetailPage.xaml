@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<pages:MXPage
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:pages="clr-namespace:MXtend.Pages;assembly=MXtend"
+    xmlns:vm="clr-namespace:MauiExample.Core.ViewModels;assembly=MauiExample.Core"
+    x:DataType="vm:NoteDetailViewModel"
+    x:TypeArguments="vm:NoteDetailViewModel"
+    x:Class="MauiExample.Pages.NoteDetailPage">
+    <VerticalStackLayout HorizontalOptions="Center" VerticalOptions="Center" WidthRequest="400">
+        <VerticalStackLayout.Resources>
+            <Style x:Key="titleStyle" TargetType="Label">
+                <Setter Property="Padding" Value="4,0,4,0" />
+                <Setter Property="Margin" Value="0,8,0,0" />
+                <Setter Property="Background" Value="#555" />
+                <Setter Property="TextColor" Value="#FFF" />
+                <Setter Property="HorizontalOptions" Value="FillAndExpand" />
+            </Style>
+        </VerticalStackLayout.Resources>
+        <Label Text="Id" Style="{StaticResource titleStyle}" />
+        <Label Text="{Binding CurrentNote.Id}" />
+
+        <Label Text="Title" Style="{StaticResource titleStyle}" />
+        <Entry Text="{Binding CurrentNote.Title}" />
+
+        <Label Text="Content" Style="{StaticResource titleStyle}" />
+        <Editor Text="{Binding CurrentNote.Content}" HeightRequest="150" />
+        
+        <HorizontalStackLayout Margin="0,5,0,0">
+            <Button
+                Text="Save changes"
+                Command="{Binding SaveChangesCommand}"
+                HorizontalOptions="Center" />
+            <Button
+                Text="Go back"
+                Command="{Binding NavigateBackCommand}"
+                HorizontalOptions="Center" />
+        </HorizontalStackLayout>
+    </VerticalStackLayout>
+</pages:MXPage>
+    

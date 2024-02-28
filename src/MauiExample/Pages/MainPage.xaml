@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<pages:MXPage 
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:pages="clr-namespace:MXtend.Pages;assembly=MXtend"
+    xmlns:vm="clr-namespace:MauiExample.Core.ViewModels;assembly=MauiExample.Core"
+    x:DataType="vm:MainViewModel"
+    x:TypeArguments="vm:MainViewModel"
+    x:Class="MauiExample.Pages.MainPage"
+    BackgroundColor="#101010">
+
+    <ScrollView>
+        <VerticalStackLayout
+            Spacing="10"
+            Padding="30,0"
+            VerticalOptions="Center">
+            <Label 
+                Text="{Binding MyText}"
+                HorizontalOptions="Center" />
+
+            <Button
+                Text="Change text"
+                Command="{Binding ChangeTextCommand}"
+                HorizontalOptions="Center" />
+
+            <Button
+                Text="Navigate to notes"
+                Command="{Binding NavigateToSecondPageCommand}"
+                HorizontalOptions="Center" />
+
+            <Button
+                Text="Navigate to notes as modal"
+                Command="{Binding NavigateToSecondPageModalCommand}"
+                HorizontalOptions="Center" />
+        </VerticalStackLayout>
+    </ScrollView>
+
+</pages:MXPage>

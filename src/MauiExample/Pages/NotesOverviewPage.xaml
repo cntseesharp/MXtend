@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<pages:MXPage
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:pages="clr-namespace:MXtend.Pages;assembly=MXtend"
+    xmlns:vm="clr-namespace:MauiExample.Core.ViewModels;assembly=MauiExample.Core"
+    xmlns:notes="clr-namespace:MauiExample.Data.Notes;assembly=MauiExample.Data"
+    x:DataType="vm:NotesOverviewViewModel"
+    x:TypeArguments="vm:NotesOverviewViewModel"
+    x:Class="MauiExample.Pages.NotesOverviewPage">
+
+    <VerticalStackLayout HorizontalOptions="Center" VerticalOptions="Center" Margin="12" MaximumWidthRequest="400" Spacing="10">
+
+        <ListView ItemsSource="{Binding Notes}" HasUnevenRows="True">
+            <ListView.ItemTemplate>
+                <DataTemplate x:DataType="notes:NoteModel">
+                    <ViewCell>
+                        <Border Stroke="Chocolate" StrokeThickness="2" Margin="0,5,0,0">
+                            <Grid>
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="*"/>
+                                    <ColumnDefinition Width="40"/>
+                                </Grid.ColumnDefinitions>
+                                <VerticalStackLayout Grid.Column="0" Grid.Row="0" HorizontalOptions="FillAndExpand">
+                                    <VerticalStackLayout.GestureRecognizers>
+                                        <TapGestureRecognizer Command="{Binding OpenNoteDetailsCommand, Source={RelativeSource AncestorType={x:Type vm:NotesOverviewViewModel}}}" CommandParameter="{Binding .}"/>
+                                    </VerticalStackLayout.GestureRecognizers>
+                                    <Label Text="{Binding Title}" HorizontalOptions="FillAndExpand" Background="#555" TextColor="#FFF" />
+                                    <Label Text="{Binding Content}"/>
+                                </VerticalStackLayout>
+
+                                <Button Grid.Column="1" Grid.Row="0" Text="X" WidthRequest="40" HorizontalOptions="Center" VerticalOptions="Center"
+                                    Command="{Binding DeleteNoteCommand, Source={RelativeSource AncestorType={x:Type vm:NotesOverviewViewModel}}}" CommandParameter="{Binding .}" />
+                            </Grid>
+                        </Border>
+                    </ViewCell>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+
+        <HorizontalStackLayout Spacing="5">
+            <Button
+                Text="Add new note"
+                Command="{Binding AddNoteCommand}" />
+            <Button
+                Text="Navigate back"
+                Command="{Binding NavigateBackCommand}" />
+        </HorizontalStackLayout>
+    </VerticalStackLayout>
+</pages:MXPage>
+    

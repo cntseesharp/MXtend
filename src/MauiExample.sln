@@ -1,0 +1,62 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31611.283
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MauiExample", "MauiExample\MauiExample.csproj", "{B269E7F0-35F6-40B2-B650-0FCF22082F0D}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MauiExample.Core", "MauiExample.Core\MauiExample.Core.csproj", "{B1733534-9E5E-46AD-B131-3167A28A1B61}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MauiExample.Contracts", "MauiExample.Contracts\MauiExample.Contracts.csproj", "{066202D9-8438-4B7F-A3DD-F322EDF570E8}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Example", "Example", "{61AA1602-B12A-497D-8668-DCB1E04188EA}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "MXtend", "MXtend", "{BE661F5A-F159-4E2B-8146-CF67270BEEB8}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MXtend", "MXtend\MXtend.csproj", "{61E2E9EF-00A7-4D84-A60A-44E5CFE3FC37}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MauiExample.Data", "MauiExample.Data\MauiExample.Data.csproj", "{ED942268-4A77-4E17-8EF8-9320731776E5}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B269E7F0-35F6-40B2-B650-0FCF22082F0D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B269E7F0-35F6-40B2-B650-0FCF22082F0D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B269E7F0-35F6-40B2-B650-0FCF22082F0D}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{B269E7F0-35F6-40B2-B650-0FCF22082F0D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B269E7F0-35F6-40B2-B650-0FCF22082F0D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B269E7F0-35F6-40B2-B650-0FCF22082F0D}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{B1733534-9E5E-46AD-B131-3167A28A1B61}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B1733534-9E5E-46AD-B131-3167A28A1B61}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B1733534-9E5E-46AD-B131-3167A28A1B61}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B1733534-9E5E-46AD-B131-3167A28A1B61}.Release|Any CPU.Build.0 = Release|Any CPU
+		{066202D9-8438-4B7F-A3DD-F322EDF570E8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{066202D9-8438-4B7F-A3DD-F322EDF570E8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{066202D9-8438-4B7F-A3DD-F322EDF570E8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{066202D9-8438-4B7F-A3DD-F322EDF570E8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{61E2E9EF-00A7-4D84-A60A-44E5CFE3FC37}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{61E2E9EF-00A7-4D84-A60A-44E5CFE3FC37}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{61E2E9EF-00A7-4D84-A60A-44E5CFE3FC37}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{61E2E9EF-00A7-4D84-A60A-44E5CFE3FC37}.Release|Any CPU.Build.0 = Release|Any CPU
+		{ED942268-4A77-4E17-8EF8-9320731776E5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ED942268-4A77-4E17-8EF8-9320731776E5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ED942268-4A77-4E17-8EF8-9320731776E5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ED942268-4A77-4E17-8EF8-9320731776E5}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{B269E7F0-35F6-40B2-B650-0FCF22082F0D} = {61AA1602-B12A-497D-8668-DCB1E04188EA}
+		{B1733534-9E5E-46AD-B131-3167A28A1B61} = {61AA1602-B12A-497D-8668-DCB1E04188EA}
+		{066202D9-8438-4B7F-A3DD-F322EDF570E8} = {61AA1602-B12A-497D-8668-DCB1E04188EA}
+		{61E2E9EF-00A7-4D84-A60A-44E5CFE3FC37} = {BE661F5A-F159-4E2B-8146-CF67270BEEB8}
+		{ED942268-4A77-4E17-8EF8-9320731776E5} = {61AA1602-B12A-497D-8668-DCB1E04188EA}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {61F7FB11-1E47-470C-91E2-47F8143E1572}
+	EndGlobalSection
+EndGlobal
